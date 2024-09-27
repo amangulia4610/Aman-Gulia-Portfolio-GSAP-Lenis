@@ -1,0 +1,1234 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: roc-grotesk, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+html.lenis {
+    height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+.thanks{
+    height: 100vh !important;
+    .contact-form{
+        height: 80% !important;
+    }
+    .thanks-desc{
+        width: 80%;
+        color: #fdfdfda8;
+    }
+    .thanks-btn{
+        width: 100%;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 12px 24px;
+        border: 1px solid #000;
+        background-color: #fed43a;
+        color: #000;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-content: center;
+        cursor: pointer;
+        margin-top: 2vw;
+    }
+}
+
+
+.dot {
+    width: 0.1px;
+    height: 0.1px;
+    background-color: #fed43a;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 10px #ff9800;
+    position: absolute;
+    z-index: 9999;
+}
+
+.mainwrapper {
+    display: flex;
+    overflow: hidden;
+    opacity: 0;
+}
+
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 7vw !important;
+    background-color: #fed43a;
+    min-height: 100lvh;
+    box-sizing: border-box;
+    display: flex;
+    transition: 0.25s;
+    padding: 6% 2% 6% 2%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    background-color: #000;
+    width: 93vw !important;
+
+    margin-left: 7vw;
+    font-family: Neuemontreal, sans-serif;
+}
+
+.page1 {
+    /* height: 100lvh; */
+    width: 100%;
+    display: flex;
+}
+
+.blk {
+    position: relative;
+    background-color: #000;
+    height: 100lvh;
+    width: 50%;
+    color: white;
+    padding: 5% 5%;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='160' height='160' patternTransform='scale(3) rotate(160)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 0%, 1)'/><path d='M121.5 39.5V9.169c0-2.827 1.724-4.707 3.473-5.602l.707-.362c2.086-1.068 4.702-.631 6.359 1.026l1.985 1.985c1.349 1.349 3.235 2.018 5.14 2.128 12.336 0 12.336-18.505 0-18.505M40.75 39.499V9.17c0-2.827-1.724-4.707-3.473-5.602l-.707-.362c-2.086-1.068-4.702-.631-6.359 1.026l-1.985 1.985c-1.349 1.349-3.236 2.018-5.14 2.128-12.336 0-12.336-18.505 0-18.505m146.575 111.248c0-12.337-18.505-12.337-18.505 0 .11 1.904.78 3.79 2.128 5.139l1.985 1.985c1.657 1.657 2.094 4.273 1.026 6.36l-.362.706c-.895 1.75-2.775 3.474-5.602 3.474l-30.33-.001m49.66-63.086c0 12.336-18.505 12.336-18.505 0 .11-1.904.78-3.791 2.128-5.14l1.985-1.985c1.657-1.657 2.094-4.273 1.026-6.359l-.362-.707c-.895-1.749-2.775-3.474-5.602-3.473h-30.33m19.162 130.344c12.337 0 12.337-18.505 0-18.505-1.631 0-3.99.98-5.139 2.128l-1.985 1.985c-1.656 1.656-4.274 2.094-6.36 1.027l-.706-.362c-2.086-1.069-3.474-3.258-3.474-5.602v-34.302l.001-26.228c0-2.344-1.427-4.458-3.473-5.602l-.707-.361a5.83 5.83 0 00-6.36 1.026l-1.984 1.985c-1.144 1.152-3.508 2.128-5.14 2.128-12.336 0-12.336-18.505 0-18.505 1.904.11 3.715.86 5.14 2.128l1.985 1.985a5.812 5.812 0 006.359 1.026l.707-.362c1.287-1.485 3.473-2.775 3.473-5.602v-30.33M23.086 168.343c-12.336 0-12.336-18.505 0-18.505 1.632 0 3.992.98 5.14 2.128l1.985 1.985c1.656 1.656 4.274 2.094 6.359 1.027l.707-.362c2.086-1.069 3.474-3.258 3.474-5.602l-.001-34.302V88.485c0-2.344 1.387-4.533 3.473-5.602l.707-.361c2.085-1.068 4.703-.63 6.359 1.026l1.985 1.985c1.148 1.148 3.508 2.128 5.14 2.128 12.336 0 12.336-18.505 0-18.505-1.905.11-3.791.78-5.14 2.128l-1.985 1.985c-1.657 1.657-4.273 2.094-6.36 1.026l-.706-.362c-1.75-.895-3.474-2.775-3.474-5.602v-30.33m80.75 80.749H91.17c-2.827 0-4.707 1.724-5.602 3.473l-.362.707c-1.068 2.086-.631 4.702 1.026 6.359l1.985 1.985c1.349 1.349 2.018 3.236 2.128 5.14 0 12.336-18.505 12.336-18.505 0 0-1.632.98-3.992 2.128-5.14l1.985-1.985c1.656-1.656 2.094-4.274 1.026-6.359l-.361-.707c-1.069-2.086-3.258-3.474-5.602-3.473h-60.53c-2.344 0-4.533-1.387-5.602-3.473l-.362-.707c-1.067-2.085-.63-4.703 1.027-6.359l1.985-1.985c1.148-1.148 2.128-3.508 2.128-5.14 0-12.336-18.505-12.336-18.505 0M121.5 38H91.169c-2.827 0-4.707-1.724-5.602-3.473l-.362-.707c-1.068-2.086-.631-4.702 1.026-6.359l1.985-1.985c1.349-1.349 2.018-3.235 2.128-5.14C90.344 8 71.84 8 71.84 20.337c0 1.632.977 3.994 2.128 5.14.663.66 1.343 1.305 1.985 1.985 1.608 1.703 2.003 4.23 1.026 6.36-.11.24-.233.474-.361.706C75.48 36.577 73.359 38 71.015 38H36.712L10.485 38c-2.344 0-4.533 1.387-5.602 3.473-.12.236-.24.471-.362.707-1.067 2.085-.63 4.703 1.027 6.36l1.985 1.984c1.148 1.148 2.128 3.508 2.128 5.14C9.66 68-8.844 68-8.844 55.664'  stroke-width='4' stroke='hsla(0, 0%, 100%, 0.04)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+}
+
+.ylw {
+    position: relative;
+    display: flex;
+    background-color: #fed43a;
+    width: 50%;
+    height: 100lvh;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='160' height='160' patternTransform='scale(3) rotate(160)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(47, 99%, 61%, 1)'/><path d='M121.5 39.5V9.169c0-2.827 1.724-4.707 3.473-5.602l.707-.362c2.086-1.068 4.702-.631 6.359 1.026l1.985 1.985c1.349 1.349 3.235 2.018 5.14 2.128 12.336 0 12.336-18.505 0-18.505M40.75 39.499V9.17c0-2.827-1.724-4.707-3.473-5.602l-.707-.362c-2.086-1.068-4.702-.631-6.359 1.026l-1.985 1.985c-1.349 1.349-3.236 2.018-5.14 2.128-12.336 0-12.336-18.505 0-18.505m146.575 111.248c0-12.337-18.505-12.337-18.505 0 .11 1.904.78 3.79 2.128 5.139l1.985 1.985c1.657 1.657 2.094 4.273 1.026 6.36l-.362.706c-.895 1.75-2.775 3.474-5.602 3.474l-30.33-.001m49.66-63.086c0 12.336-18.505 12.336-18.505 0 .11-1.904.78-3.791 2.128-5.14l1.985-1.985c1.657-1.657 2.094-4.273 1.026-6.359l-.362-.707c-.895-1.749-2.775-3.474-5.602-3.473h-30.33m19.162 130.344c12.337 0 12.337-18.505 0-18.505-1.631 0-3.99.98-5.139 2.128l-1.985 1.985c-1.656 1.656-4.274 2.094-6.36 1.027l-.706-.362c-2.086-1.069-3.474-3.258-3.474-5.602v-34.302l.001-26.228c0-2.344-1.427-4.458-3.473-5.602l-.707-.361a5.83 5.83 0 00-6.36 1.026l-1.984 1.985c-1.144 1.152-3.508 2.128-5.14 2.128-12.336 0-12.336-18.505 0-18.505 1.904.11 3.715.86 5.14 2.128l1.985 1.985a5.812 5.812 0 006.359 1.026l.707-.362c1.287-1.485 3.473-2.775 3.473-5.602v-30.33M23.086 168.343c-12.336 0-12.336-18.505 0-18.505 1.632 0 3.992.98 5.14 2.128l1.985 1.985c1.656 1.656 4.274 2.094 6.359 1.027l.707-.362c2.086-1.069 3.474-3.258 3.474-5.602l-.001-34.302V88.485c0-2.344 1.387-4.533 3.473-5.602l.707-.361c2.085-1.068 4.703-.63 6.359 1.026l1.985 1.985c1.148 1.148 3.508 2.128 5.14 2.128 12.336 0 12.336-18.505 0-18.505-1.905.11-3.791.78-5.14 2.128l-1.985 1.985c-1.657 1.657-4.273 2.094-6.36 1.026l-.706-.362c-1.75-.895-3.474-2.775-3.474-5.602v-30.33m80.75 80.749H91.17c-2.827 0-4.707 1.724-5.602 3.473l-.362.707c-1.068 2.086-.631 4.702 1.026 6.359l1.985 1.985c1.349 1.349 2.018 3.236 2.128 5.14 0 12.336-18.505 12.336-18.505 0 0-1.632.98-3.992 2.128-5.14l1.985-1.985c1.656-1.656 2.094-4.274 1.026-6.359l-.361-.707c-1.069-2.086-3.258-3.474-5.602-3.473h-60.53c-2.344 0-4.533-1.387-5.602-3.473l-.362-.707c-1.067-2.085-.63-4.703 1.027-6.359l1.985-1.985c1.148-1.148 2.128-3.508 2.128-5.14 0-12.336-18.505-12.336-18.505 0M121.5 38H91.169c-2.827 0-4.707-1.724-5.602-3.473l-.362-.707c-1.068-2.086-.631-4.702 1.026-6.359l1.985-1.985c1.349-1.349 2.018-3.235 2.128-5.14C90.344 8 71.84 8 71.84 20.337c0 1.632.977 3.994 2.128 5.14.663.66 1.343 1.305 1.985 1.985 1.608 1.703 2.003 4.23 1.026 6.36-.11.24-.233.474-.361.706C75.48 36.577 73.359 38 71.015 38H36.712L10.485 38c-2.344 0-4.533 1.387-5.602 3.473-.12.236-.24.471-.362.707-1.067 2.085-.63 4.703 1.027 6.36l1.985 1.984c1.148 1.148 2.128 3.508 2.128 5.14C9.66 68-8.844 68-8.844 55.664'  stroke-width='4' stroke='hsla(33, 90%, 65%, 0.25)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+}
+
+.page2 {
+    height: 100lvh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    
+}
+
+.heading {
+    height: 50lvh;
+    width: 100%;
+    display: flex;
+
+}
+
+/* CSS code for fixed left-side navbar */
+
+
+/* New styles for the icons */
+.nav-icons img {
+    width: 22px;
+    /* Adjust the width of the icons as needed */
+    height: 22px;
+    /* Adjust the height of the icons as needed */
+    margin-bottom: 10px;
+    /* Add some space between the icons and navigation items */
+}
+
+.nav-icons {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* New styles for the navigation items */
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+/* New styles for the navigation items links */
+.nav-items a {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    padding: 10px 0;
+    /* Adjust the vertical spacing between navigation links */
+    margin-bottom: 75%;
+    /* Add space between navigation links */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+
+    color: #000000;
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 200;
+}
+
+/* Optional styles for hover effect on navigation items */
+.nav-items a:hover {
+    color: #000000;
+}
+
+.page1 h1 {
+    color: white;
+    /* Set the text color to white */
+    -webkit-text-fill-color: black;
+    /* Override the color property and set the text fill color to black */
+    -webkit-text-stroke-width: 1px;
+    /* Set the width of the text stroke (outline) to 1 pixel */
+    -webkit-text-stroke-color: white;
+    /* Set the color of the text stroke (outline) to white */
+
+    font-size: calc(3vw + 2.5lvh);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: calc(5lvh+5vw);
+    text-shadow: none;
+    letter-spacing: 0px;
+    font-weight: 800;
+    z-index: 2;
+}
+
+.h1-stroke {
+    color: black;
+    /* Set the text color to white */
+    -webkit-text-fill-color: white;
+    /* Override the color property and set the text fill color to black */
+    -webkit-text-stroke-width: 1px;
+    /* Set the width of the text stroke (outline) to 1 pixel */
+    -webkit-text-stroke-color: white;
+    /* Set the color of the text stroke (outline) to white */
+
+    font-size: calc(4vw + 3.5lvh);
+    line-height: 88px;
+    font-weight: 800;
+    text-shadow: none;
+}
+
+.page1 h3 {
+    margin-top: calc(5vh+5vw);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: 600;
+    font-size: calc(2vh + 1vw);
+    line-height: 140%;
+
+}
+
+.h3-stroke {
+    color: #fff;
+    position: relative;
+    /* display: inline-block; */
+    vertical-align: baseline;
+}
+
+
+.page1 .h3-stroke::after {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    /* Adjust the distance of the underline from the text */
+    left: 2%;
+    width: 95%;
+    height: 1px;
+    /* Adjust the thickness of the underline */
+    background-color: yellow;
+    /* Set the yellow underline color */
+    z-index: 1;
+}
+
+.blk .ylwbtn {
+    position: relative;
+    padding: 16px 32px;
+    border: 1px solid #000;
+    font-weight: 800;
+    background-color: #fed43a;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-content: center;
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-size: 20px;
+    cursor: pointer;
+
+
+
+}
+
+.page1 .blk a :hover {
+    transform: translateY(-2px) !important;
+    transition: ease-in 0.1s;
+
+}
+
+.page1 .ylw img {
+    position: absolute;
+    width: 40vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+
+}
+
+.page1mbimg {
+    /* position: absolute; */
+    width: 100%;
+    /* bottom: 0%; */
+    /* left: 50%; */
+    padding: 20vw 0vw 0 0;
+    /* transform: translateX(-50%); */
+    border-radius: 12px;
+
+}
+
+.blk .ylwmbbtn {
+    position: relative;
+    padding: 16px 24px;
+    border: 1px solid #000;
+    font-weight: 800;
+    color: #000;
+    background-color: #fed43a;
+    justify-content: center;
+    /* width: 20lvh; */
+    margin-top: 5%;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.h1-heading {
+    padding-top: 20%;
+    font-size: calc(4vw + 3.5lvh);
+    /* Adjust the font size of the text to 48 pixels */
+    line-height: 88px;
+    font-weight: 800;
+    text-shadow: none;
+}
+
+
+.h1-heading>span {
+    color: #fed43a;
+}
+
+.page2.blk {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.heading .ylw img {
+
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    /* border-radius: 8px 8px; */
+
+
+}
+
+.verticle1-page2 {
+    position: absolute;
+    width: 15%;
+    top: 15%;
+    height: 100%;
+
+    .page2-sno {
+        font-size: calc(3vw + 2.5lvh);
+        line-height: 10lvh;
+        font-weight: 500;
+        text-shadow: none;
+        color: #fed43a;
+
+    }
+
+    .line {
+        width: 2vw;
+        margin-top: 10lvh;
+        height: 0;
+        border-right: 0.2vw solid whitesmoke;
+    }
+
+}
+
+.verticle2-page2 {
+    position: absolute;
+    left: 25%;
+    width: 65%;
+    top: 15%;
+    height: 100%;
+
+    .page2-title {
+        font-size: calc(3vw + 2.5lvh);
+        /* Adjust the font size of the text to 48 pixels */
+        line-height: 10lvh;
+        font-weight: 500;
+        text-shadow: none;
+        width: 100%;
+        padding-bottom: 5%;
+        color: #fed43a;
+
+    }
+
+    .subtitle {
+        font-size: calc(1vw + 1lvh);
+        /* Adjust the font size of the text to 48 pixels */
+        font-weight: 400;
+        padding-bottom: 2lvh;
+        text-shadow: none;
+    }
+
+    .description {
+        /* height: 30lvh; */
+        font-weight: lighter;
+        letter-spacing: .6px;
+        text-transform: none;
+
+    }
+
+    .roles {
+        width: 100%;
+        text-transform: none;
+        padding: 2vh 0;
+        border-top: 2px solid whitesmoke;
+        border-bottom: 2px solid whitesmoke;
+        margin: 15vh 0 0 0;
+        font-family: Neuemontreal, sans-serif;
+        color: #fff;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: 0;
+
+    }
+
+    .page2-buttons {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    .view {
+        transition: .3s;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 16px 32px;
+        border: 1px solid #000;
+        background-color: #fed43a;
+        color: #000;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-content: center;
+        cursor: pointer;
+
+    }
+
+    .casestudy {
+        transition: .3s;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 16px 32px;
+        color: white;
+        border: 1px solid #4a4949;
+        background-color: #4a4949;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-content: center;
+        cursor: pointer;
+
+
+    }
+}
+
+.page2.ylw {
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+
+.work-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 50%;
+    border-radius: 8px;
+
+}
+
+/* .img2 {
+    width: 90%;
+    height: 45%;
+} */
+
+.the-green-travels {
+    letter-spacing: -6px !important;
+
+}
+
+#about,
+#work {
+    height: 40vh !important;
+}
+#work .h1-heading{
+padding-top: 0% !important;}
+.pageaboutdesc {
+    height: 60vh !important;
+}
+
+.aboutdesc {
+    width: 160%;
+    position: absolute;
+    /* left: 7vw; */
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    height: 45lvh;
+    margin-right: auto;
+    margin-left: 5vw;
+    border-radius: 18px;
+    background-color: #fed43a;
+    border: 0.8vw solid #ffcf20;
+    box-shadow: 5px 3px 1vw #ff9800;
+
+
+
+    .aboutdescbox {
+        border-radius: 18px;
+        display: flex;
+        background-color: #000;
+        height: 100%;
+        width: 100%;
+
+        .aboutleft {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .dp {
+                height: 23lvh;
+                width: 23lvh;
+
+                border-radius: 50%;
+            }
+        }
+
+        .aboutright {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .aboutp {
+                width: 90%;
+                font-size: 0.9vw;
+            }
+        }
+    }
+}
+
+.my-expertise {
+    height: 50lvh;
+
+    & .blk {
+        & .icon img {
+            background-color: #ffcf20;
+            border: 10px solid #ffcf20 !important;
+            height: 100% !important;
+        }
+
+        height: 100%;
+        padding: 2% 5%;
+    }
+
+    .show {
+        height: 100%;
+        padding: 2% 5%;
+
+        & .expertise-title {
+            color: #000 !important;
+        }
+
+        & img {
+            border-radius: 0% !important;
+        }
+
+    }
+
+    .expertise {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        padding-top: 5%;
+        flex-direction: column;
+
+        .icon {
+            height: 30%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            & img {
+                height: 80%;
+                border-radius: 50%;
+
+            }
+        }
+
+        .expertise-title {
+            height: 20%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            color: #fed43a;
+        }
+
+        .expertisedesc {
+            height: 50%;
+            width: 100%;
+            padding: 0% 10%;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            overflow: hidden;
+
+
+        }
+    }
+}
+
+#contact {
+    /* height: 90lvh; */
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background-color: #fed43a;
+    z-index: 1;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='160' height='160' patternTransform='scale(3) rotate(160)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(47, 99%, 61%, 1)'/><path d='M121.5 39.5V9.169c0-2.827 1.724-4.707 3.473-5.602l.707-.362c2.086-1.068 4.702-.631 6.359 1.026l1.985 1.985c1.349 1.349 3.235 2.018 5.14 2.128 12.336 0 12.336-18.505 0-18.505M40.75 39.499V9.17c0-2.827-1.724-4.707-3.473-5.602l-.707-.362c-2.086-1.068-4.702-.631-6.359 1.026l-1.985 1.985c-1.349 1.349-3.236 2.018-5.14 2.128-12.336 0-12.336-18.505 0-18.505m146.575 111.248c0-12.337-18.505-12.337-18.505 0 .11 1.904.78 3.79 2.128 5.139l1.985 1.985c1.657 1.657 2.094 4.273 1.026 6.36l-.362.706c-.895 1.75-2.775 3.474-5.602 3.474l-30.33-.001m49.66-63.086c0 12.336-18.505 12.336-18.505 0 .11-1.904.78-3.791 2.128-5.14l1.985-1.985c1.657-1.657 2.094-4.273 1.026-6.359l-.362-.707c-.895-1.749-2.775-3.474-5.602-3.473h-30.33m19.162 130.344c12.337 0 12.337-18.505 0-18.505-1.631 0-3.99.98-5.139 2.128l-1.985 1.985c-1.656 1.656-4.274 2.094-6.36 1.027l-.706-.362c-2.086-1.069-3.474-3.258-3.474-5.602v-34.302l.001-26.228c0-2.344-1.427-4.458-3.473-5.602l-.707-.361a5.83 5.83 0 00-6.36 1.026l-1.984 1.985c-1.144 1.152-3.508 2.128-5.14 2.128-12.336 0-12.336-18.505 0-18.505 1.904.11 3.715.86 5.14 2.128l1.985 1.985a5.812 5.812 0 006.359 1.026l.707-.362c1.287-1.485 3.473-2.775 3.473-5.602v-30.33M23.086 168.343c-12.336 0-12.336-18.505 0-18.505 1.632 0 3.992.98 5.14 2.128l1.985 1.985c1.656 1.656 4.274 2.094 6.359 1.027l.707-.362c2.086-1.069 3.474-3.258 3.474-5.602l-.001-34.302V88.485c0-2.344 1.387-4.533 3.473-5.602l.707-.361c2.085-1.068 4.703-.63 6.359 1.026l1.985 1.985c1.148 1.148 3.508 2.128 5.14 2.128 12.336 0 12.336-18.505 0-18.505-1.905.11-3.791.78-5.14 2.128l-1.985 1.985c-1.657 1.657-4.273 2.094-6.36 1.026l-.706-.362c-1.75-.895-3.474-2.775-3.474-5.602v-30.33m80.75 80.749H91.17c-2.827 0-4.707 1.724-5.602 3.473l-.362.707c-1.068 2.086-.631 4.702 1.026 6.359l1.985 1.985c1.349 1.349 2.018 3.236 2.128 5.14 0 12.336-18.505 12.336-18.505 0 0-1.632.98-3.992 2.128-5.14l1.985-1.985c1.656-1.656 2.094-4.274 1.026-6.359l-.361-.707c-1.069-2.086-3.258-3.474-5.602-3.473h-60.53c-2.344 0-4.533-1.387-5.602-3.473l-.362-.707c-1.067-2.085-.63-4.703 1.027-6.359l1.985-1.985c1.148-1.148 2.128-3.508 2.128-5.14 0-12.336-18.505-12.336-18.505 0M121.5 38H91.169c-2.827 0-4.707-1.724-5.602-3.473l-.362-.707c-1.068-2.086-.631-4.702 1.026-6.359l1.985-1.985c1.349-1.349 2.018-3.235 2.128-5.14C90.344 8 71.84 8 71.84 20.337c0 1.632.977 3.994 2.128 5.14.663.66 1.343 1.305 1.985 1.985 1.608 1.703 2.003 4.23 1.026 6.36-.11.24-.233.474-.361.706C75.48 36.577 73.359 38 71.015 38H36.712L10.485 38c-2.344 0-4.533 1.387-5.602 3.473-.12.236-.24.471-.362.707-1.067 2.085-.63 4.703 1.027 6.36l1.985 1.984c1.148 1.148 2.128 3.508 2.128 5.14C9.66 68-8.844 68-8.844 55.664'  stroke-width='4' stroke='hsla(33, 90%, 65%, 0.25)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+
+    .contactblk {
+        position: relative;
+        background-color: #000;
+        width: 50%;
+        height: 50lvh;
+        color: white;
+        padding: 5% 5%;
+        background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='160' height='160' patternTransform='scale(3) rotate(160)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 0%, 1)'/><path d='M121.5 39.5V9.169c0-2.827 1.724-4.707 3.473-5.602l.707-.362c2.086-1.068 4.702-.631 6.359 1.026l1.985 1.985c1.349 1.349 3.235 2.018 5.14 2.128 12.336 0 12.336-18.505 0-18.505M40.75 39.499V9.17c0-2.827-1.724-4.707-3.473-5.602l-.707-.362c-2.086-1.068-4.702-.631-6.359 1.026l-1.985 1.985c-1.349 1.349-3.236 2.018-5.14 2.128-12.336 0-12.336-18.505 0-18.505m146.575 111.248c0-12.337-18.505-12.337-18.505 0 .11 1.904.78 3.79 2.128 5.139l1.985 1.985c1.657 1.657 2.094 4.273 1.026 6.36l-.362.706c-.895 1.75-2.775 3.474-5.602 3.474l-30.33-.001m49.66-63.086c0 12.336-18.505 12.336-18.505 0 .11-1.904.78-3.791 2.128-5.14l1.985-1.985c1.657-1.657 2.094-4.273 1.026-6.359l-.362-.707c-.895-1.749-2.775-3.474-5.602-3.473h-30.33m19.162 130.344c12.337 0 12.337-18.505 0-18.505-1.631 0-3.99.98-5.139 2.128l-1.985 1.985c-1.656 1.656-4.274 2.094-6.36 1.027l-.706-.362c-2.086-1.069-3.474-3.258-3.474-5.602v-34.302l.001-26.228c0-2.344-1.427-4.458-3.473-5.602l-.707-.361a5.83 5.83 0 00-6.36 1.026l-1.984 1.985c-1.144 1.152-3.508 2.128-5.14 2.128-12.336 0-12.336-18.505 0-18.505 1.904.11 3.715.86 5.14 2.128l1.985 1.985a5.812 5.812 0 006.359 1.026l.707-.362c1.287-1.485 3.473-2.775 3.473-5.602v-30.33M23.086 168.343c-12.336 0-12.336-18.505 0-18.505 1.632 0 3.992.98 5.14 2.128l1.985 1.985c1.656 1.656 4.274 2.094 6.359 1.027l.707-.362c2.086-1.069 3.474-3.258 3.474-5.602l-.001-34.302V88.485c0-2.344 1.387-4.533 3.473-5.602l.707-.361c2.085-1.068 4.703-.63 6.359 1.026l1.985 1.985c1.148 1.148 3.508 2.128 5.14 2.128 12.336 0 12.336-18.505 0-18.505-1.905.11-3.791.78-5.14 2.128l-1.985 1.985c-1.657 1.657-4.273 2.094-6.36 1.026l-.706-.362c-1.75-.895-3.474-2.775-3.474-5.602v-30.33m80.75 80.749H91.17c-2.827 0-4.707 1.724-5.602 3.473l-.362.707c-1.068 2.086-.631 4.702 1.026 6.359l1.985 1.985c1.349 1.349 2.018 3.236 2.128 5.14 0 12.336-18.505 12.336-18.505 0 0-1.632.98-3.992 2.128-5.14l1.985-1.985c1.656-1.656 2.094-4.274 1.026-6.359l-.361-.707c-1.069-2.086-3.258-3.474-5.602-3.473h-60.53c-2.344 0-4.533-1.387-5.602-3.473l-.362-.707c-1.067-2.085-.63-4.703 1.027-6.359l1.985-1.985c1.148-1.148 2.128-3.508 2.128-5.14 0-12.336-18.505-12.336-18.505 0M121.5 38H91.169c-2.827 0-4.707-1.724-5.602-3.473l-.362-.707c-1.068-2.086-.631-4.702 1.026-6.359l1.985-1.985c1.349-1.349 2.018-3.235 2.128-5.14C90.344 8 71.84 8 71.84 20.337c0 1.632.977 3.994 2.128 5.14.663.66 1.343 1.305 1.985 1.985 1.608 1.703 2.003 4.23 1.026 6.36-.11.24-.233.474-.361.706C75.48 36.577 73.359 38 71.015 38H36.712L10.485 38c-2.344 0-4.533 1.387-5.602 3.473-.12.236-.24.471-.362.707-1.067 2.085-.63 4.703 1.027 6.36l1.985 1.984c1.148 1.148 2.128 3.508 2.128 5.14C9.66 68-8.844 68-8.844 55.664'  stroke-width='4' stroke='hsla(0, 0%, 100%, 0.04)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+    }
+
+    .contactylw {
+        position: relative;
+        display: flex;
+        background-color: #fed43a;
+        width: 50%;
+        height: 50vh !important;
+        z-index: 2;
+        background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='160' height='160' patternTransform='scale(3) rotate(160)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(47, 99%, 61%, 1)'/><path d='M121.5 39.5V9.169c0-2.827 1.724-4.707 3.473-5.602l.707-.362c2.086-1.068 4.702-.631 6.359 1.026l1.985 1.985c1.349 1.349 3.235 2.018 5.14 2.128 12.336 0 12.336-18.505 0-18.505M40.75 39.499V9.17c0-2.827-1.724-4.707-3.473-5.602l-.707-.362c-2.086-1.068-4.702-.631-6.359 1.026l-1.985 1.985c-1.349 1.349-3.236 2.018-5.14 2.128-12.336 0-12.336-18.505 0-18.505m146.575 111.248c0-12.337-18.505-12.337-18.505 0 .11 1.904.78 3.79 2.128 5.139l1.985 1.985c1.657 1.657 2.094 4.273 1.026 6.36l-.362.706c-.895 1.75-2.775 3.474-5.602 3.474l-30.33-.001m49.66-63.086c0 12.336-18.505 12.336-18.505 0 .11-1.904.78-3.791 2.128-5.14l1.985-1.985c1.657-1.657 2.094-4.273 1.026-6.359l-.362-.707c-.895-1.749-2.775-3.474-5.602-3.473h-30.33m19.162 130.344c12.337 0 12.337-18.505 0-18.505-1.631 0-3.99.98-5.139 2.128l-1.985 1.985c-1.656 1.656-4.274 2.094-6.36 1.027l-.706-.362c-2.086-1.069-3.474-3.258-3.474-5.602v-34.302l.001-26.228c0-2.344-1.427-4.458-3.473-5.602l-.707-.361a5.83 5.83 0 00-6.36 1.026l-1.984 1.985c-1.144 1.152-3.508 2.128-5.14 2.128-12.336 0-12.336-18.505 0-18.505 1.904.11 3.715.86 5.14 2.128l1.985 1.985a5.812 5.812 0 006.359 1.026l.707-.362c1.287-1.485 3.473-2.775 3.473-5.602v-30.33M23.086 168.343c-12.336 0-12.336-18.505 0-18.505 1.632 0 3.992.98 5.14 2.128l1.985 1.985c1.656 1.656 4.274 2.094 6.359 1.027l.707-.362c2.086-1.069 3.474-3.258 3.474-5.602l-.001-34.302V88.485c0-2.344 1.387-4.533 3.473-5.602l.707-.361c2.085-1.068 4.703-.63 6.359 1.026l1.985 1.985c1.148 1.148 3.508 2.128 5.14 2.128 12.336 0 12.336-18.505 0-18.505-1.905.11-3.791.78-5.14 2.128l-1.985 1.985c-1.657 1.657-4.273 2.094-6.36 1.026l-.706-.362c-1.75-.895-3.474-2.775-3.474-5.602v-30.33m80.75 80.749H91.17c-2.827 0-4.707 1.724-5.602 3.473l-.362.707c-1.068 2.086-.631 4.702 1.026 6.359l1.985 1.985c1.349 1.349 2.018 3.236 2.128 5.14 0 12.336-18.505 12.336-18.505 0 0-1.632.98-3.992 2.128-5.14l1.985-1.985c1.656-1.656 2.094-4.274 1.026-6.359l-.361-.707c-1.069-2.086-3.258-3.474-5.602-3.473h-60.53c-2.344 0-4.533-1.387-5.602-3.473l-.362-.707c-1.067-2.085-.63-4.703 1.027-6.359l1.985-1.985c1.148-1.148 2.128-3.508 2.128-5.14 0-12.336-18.505-12.336-18.505 0M121.5 38H91.169c-2.827 0-4.707-1.724-5.602-3.473l-.362-.707c-1.068-2.086-.631-4.702 1.026-6.359l1.985-1.985c1.349-1.349 2.018-3.235 2.128-5.14C90.344 8 71.84 8 71.84 20.337c0 1.632.977 3.994 2.128 5.14.663.66 1.343 1.305 1.985 1.985 1.608 1.703 2.003 4.23 1.026 6.36-.11.24-.233.474-.361.706C75.48 36.577 73.359 38 71.015 38H36.712L10.485 38c-2.344 0-4.533 1.387-5.602 3.473-.12.236-.24.471-.362.707-1.067 2.085-.63 4.703 1.027 6.36l1.985 1.984c1.148 1.148 2.128 3.508 2.128 5.14C9.66 68-8.844 68-8.844 55.664'  stroke-width='4' stroke='hsla(33, 90%, 65%, 0.25)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+
+    }
+}
+
+.form {
+
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100lvh;
+    background-color: #ffc107;
+    z-index: 3;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='160' height='160' patternTransform='scale(3) rotate(160)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(47, 99%, 61%, 1)'/><path d='M121.5 39.5V9.169c0-2.827 1.724-4.707 3.473-5.602l.707-.362c2.086-1.068 4.702-.631 6.359 1.026l1.985 1.985c1.349 1.349 3.235 2.018 5.14 2.128 12.336 0 12.336-18.505 0-18.505M40.75 39.499V9.17c0-2.827-1.724-4.707-3.473-5.602l-.707-.362c-2.086-1.068-4.702-.631-6.359 1.026l-1.985 1.985c-1.349 1.349-3.236 2.018-5.14 2.128-12.336 0-12.336-18.505 0-18.505m146.575 111.248c0-12.337-18.505-12.337-18.505 0 .11 1.904.78 3.79 2.128 5.139l1.985 1.985c1.657 1.657 2.094 4.273 1.026 6.36l-.362.706c-.895 1.75-2.775 3.474-5.602 3.474l-30.33-.001m49.66-63.086c0 12.336-18.505 12.336-18.505 0 .11-1.904.78-3.791 2.128-5.14l1.985-1.985c1.657-1.657 2.094-4.273 1.026-6.359l-.362-.707c-.895-1.749-2.775-3.474-5.602-3.473h-30.33m19.162 130.344c12.337 0 12.337-18.505 0-18.505-1.631 0-3.99.98-5.139 2.128l-1.985 1.985c-1.656 1.656-4.274 2.094-6.36 1.027l-.706-.362c-2.086-1.069-3.474-3.258-3.474-5.602v-34.302l.001-26.228c0-2.344-1.427-4.458-3.473-5.602l-.707-.361a5.83 5.83 0 00-6.36 1.026l-1.984 1.985c-1.144 1.152-3.508 2.128-5.14 2.128-12.336 0-12.336-18.505 0-18.505 1.904.11 3.715.86 5.14 2.128l1.985 1.985a5.812 5.812 0 006.359 1.026l.707-.362c1.287-1.485 3.473-2.775 3.473-5.602v-30.33M23.086 168.343c-12.336 0-12.336-18.505 0-18.505 1.632 0 3.992.98 5.14 2.128l1.985 1.985c1.656 1.656 4.274 2.094 6.359 1.027l.707-.362c2.086-1.069 3.474-3.258 3.474-5.602l-.001-34.302V88.485c0-2.344 1.387-4.533 3.473-5.602l.707-.361c2.085-1.068 4.703-.63 6.359 1.026l1.985 1.985c1.148 1.148 3.508 2.128 5.14 2.128 12.336 0 12.336-18.505 0-18.505-1.905.11-3.791.78-5.14 2.128l-1.985 1.985c-1.657 1.657-4.273 2.094-6.36 1.026l-.706-.362c-1.75-.895-3.474-2.775-3.474-5.602v-30.33m80.75 80.749H91.17c-2.827 0-4.707 1.724-5.602 3.473l-.362.707c-1.068 2.086-.631 4.702 1.026 6.359l1.985 1.985c1.349 1.349 2.018 3.236 2.128 5.14 0 12.336-18.505 12.336-18.505 0 0-1.632.98-3.992 2.128-5.14l1.985-1.985c1.656-1.656 2.094-4.274 1.026-6.359l-.361-.707c-1.069-2.086-3.258-3.474-5.602-3.473h-60.53c-2.344 0-4.533-1.387-5.602-3.473l-.362-.707c-1.067-2.085-.63-4.703 1.027-6.359l1.985-1.985c1.148-1.148 2.128-3.508 2.128-5.14 0-12.336-18.505-12.336-18.505 0M121.5 38H91.169c-2.827 0-4.707-1.724-5.602-3.473l-.362-.707c-1.068-2.086-.631-4.702 1.026-6.359l1.985-1.985c1.349-1.349 2.018-3.235 2.128-5.14C90.344 8 71.84 8 71.84 20.337c0 1.632.977 3.994 2.128 5.14.663.66 1.343 1.305 1.985 1.985 1.608 1.703 2.003 4.23 1.026 6.36-.11.24-.233.474-.361.706C75.48 36.577 73.359 38 71.015 38H36.712L10.485 38c-2.344 0-4.533 1.387-5.602 3.473-.12.236-.24.471-.362.707-1.067 2.085-.63 4.703 1.027 6.36l1.985 1.984c1.148 1.148 2.128 3.508 2.128 5.14C9.66 68-8.844 68-8.844 55.664'  stroke-width='4' stroke='hsla(33, 90%, 65%, 0.25)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    top: 5%;
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 70vw;
+        height: 70lvh;
+        border: 1vw solid #fed43a;
+        background-color: #878787;
+        padding: 20px;
+        background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='160' height='160' patternTransform='scale(3) rotate(160)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 0%, 1)'/><path d='M121.5 39.5V9.169c0-2.827 1.724-4.707 3.473-5.602l.707-.362c2.086-1.068 4.702-.631 6.359 1.026l1.985 1.985c1.349 1.349 3.235 2.018 5.14 2.128 12.336 0 12.336-18.505 0-18.505M40.75 39.499V9.17c0-2.827-1.724-4.707-3.473-5.602l-.707-.362c-2.086-1.068-4.702-.631-6.359 1.026l-1.985 1.985c-1.349 1.349-3.236 2.018-5.14 2.128-12.336 0-12.336-18.505 0-18.505m146.575 111.248c0-12.337-18.505-12.337-18.505 0 .11 1.904.78 3.79 2.128 5.139l1.985 1.985c1.657 1.657 2.094 4.273 1.026 6.36l-.362.706c-.895 1.75-2.775 3.474-5.602 3.474l-30.33-.001m49.66-63.086c0 12.336-18.505 12.336-18.505 0 .11-1.904.78-3.791 2.128-5.14l1.985-1.985c1.657-1.657 2.094-4.273 1.026-6.359l-.362-.707c-.895-1.749-2.775-3.474-5.602-3.473h-30.33m19.162 130.344c12.337 0 12.337-18.505 0-18.505-1.631 0-3.99.98-5.139 2.128l-1.985 1.985c-1.656 1.656-4.274 2.094-6.36 1.027l-.706-.362c-2.086-1.069-3.474-3.258-3.474-5.602v-34.302l.001-26.228c0-2.344-1.427-4.458-3.473-5.602l-.707-.361a5.83 5.83 0 00-6.36 1.026l-1.984 1.985c-1.144 1.152-3.508 2.128-5.14 2.128-12.336 0-12.336-18.505 0-18.505 1.904.11 3.715.86 5.14 2.128l1.985 1.985a5.812 5.812 0 006.359 1.026l.707-.362c1.287-1.485 3.473-2.775 3.473-5.602v-30.33M23.086 168.343c-12.336 0-12.336-18.505 0-18.505 1.632 0 3.992.98 5.14 2.128l1.985 1.985c1.656 1.656 4.274 2.094 6.359 1.027l.707-.362c2.086-1.069 3.474-3.258 3.474-5.602l-.001-34.302V88.485c0-2.344 1.387-4.533 3.473-5.602l.707-.361c2.085-1.068 4.703-.63 6.359 1.026l1.985 1.985c1.148 1.148 3.508 2.128 5.14 2.128 12.336 0 12.336-18.505 0-18.505-1.905.11-3.791.78-5.14 2.128l-1.985 1.985c-1.657 1.657-4.273 2.094-6.36 1.026l-.706-.362c-1.75-.895-3.474-2.775-3.474-5.602v-30.33m80.75 80.749H91.17c-2.827 0-4.707 1.724-5.602 3.473l-.362.707c-1.068 2.086-.631 4.702 1.026 6.359l1.985 1.985c1.349 1.349 2.018 3.236 2.128 5.14 0 12.336-18.505 12.336-18.505 0 0-1.632.98-3.992 2.128-5.14l1.985-1.985c1.656-1.656 2.094-4.274 1.026-6.359l-.361-.707c-1.069-2.086-3.258-3.474-5.602-3.473h-60.53c-2.344 0-4.533-1.387-5.602-3.473l-.362-.707c-1.067-2.085-.63-4.703 1.027-6.359l1.985-1.985c1.148-1.148 2.128-3.508 2.128-5.14 0-12.336-18.505-12.336-18.505 0M121.5 38H91.169c-2.827 0-4.707-1.724-5.602-3.473l-.362-.707c-1.068-2.086-.631-4.702 1.026-6.359l1.985-1.985c1.349-1.349 2.018-3.235 2.128-5.14C90.344 8 71.84 8 71.84 20.337c0 1.632.977 3.994 2.128 5.14.663.66 1.343 1.305 1.985 1.985 1.608 1.703 2.003 4.23 1.026 6.36-.11.24-.233.474-.361.706C75.48 36.577 73.359 38 71.015 38H36.712L10.485 38c-2.344 0-4.533 1.387-5.602 3.473-.12.236-.24.471-.362.707-1.067 2.085-.63 4.703 1.027 6.36l1.985 1.984c1.148 1.148 2.128 3.508 2.128 5.14C9.66 68-8.844 68-8.844 55.664'  stroke-width='4' stroke='hsla(0, 0%, 100%, 0.04)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+        box-shadow: 2vw 2vw 3vw #ff9800;
+
+        & h1 {
+            color: #ffc107;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .quote {
+            color: #4a4949;
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        & form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+
+            & input,
+            & textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 1lvh;
+                color: #fff;
+                border: 1px solid #373737;
+                background-color: #4a4949;
+                border-radius: 4px;
+            }
+
+            input[type="text"]::placeholder,
+            input[type="email"]::placeholder,
+            textarea::placeholder {
+                color: #999;
+            }
+
+            textarea {
+                height: 150px;
+            }
+
+
+        }
+
+    }
+}
+
+.icons-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-row a {
+    margin: 2vw 10px;
+    display: flex;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0vw 0vw 2vw #ff9800;
+
+    border-radius: 50%;
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+.icons-row a:hover {
+    background-color: #ffd94f;
+    transform: translateY(-15px);
+
+}
+
+.heighticon {
+    height: 90px !important;
+}
+
+.icons-row img {
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffc107;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 1lvh;
+    border-radius: 4px;
+}
+
+.submit:hover {
+    background-color: #fed43a;
+}
+
+
+@media screen and (min-width:769px) {
+
+    .page1mbimg,
+    .heading .blk img,
+    .work-mb-img {
+        display: none;
+    }
+
+    .ylwmbbtn {
+        display: none;
+    }
+
+    .form {
+        left: 12.5%;
+
+    }
+    .blk{
+        height: 100lvh;
+    }
+
+}
+
+footer {
+    width: 100%;
+    background-color: #ffc107;
+    height: 25lvh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 5lvh;
+
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='160' height='160' patternTransform='scale(3) rotate(160)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(47, 99%, 61%, 1)'/><path d='M121.5 39.5V9.169c0-2.827 1.724-4.707 3.473-5.602l.707-.362c2.086-1.068 4.702-.631 6.359 1.026l1.985 1.985c1.349 1.349 3.235 2.018 5.14 2.128 12.336 0 12.336-18.505 0-18.505M40.75 39.499V9.17c0-2.827-1.724-4.707-3.473-5.602l-.707-.362c-2.086-1.068-4.702-.631-6.359 1.026l-1.985 1.985c-1.349 1.349-3.236 2.018-5.14 2.128-12.336 0-12.336-18.505 0-18.505m146.575 111.248c0-12.337-18.505-12.337-18.505 0 .11 1.904.78 3.79 2.128 5.139l1.985 1.985c1.657 1.657 2.094 4.273 1.026 6.36l-.362.706c-.895 1.75-2.775 3.474-5.602 3.474l-30.33-.001m49.66-63.086c0 12.336-18.505 12.336-18.505 0 .11-1.904.78-3.791 2.128-5.14l1.985-1.985c1.657-1.657 2.094-4.273 1.026-6.359l-.362-.707c-.895-1.749-2.775-3.474-5.602-3.473h-30.33m19.162 130.344c12.337 0 12.337-18.505 0-18.505-1.631 0-3.99.98-5.139 2.128l-1.985 1.985c-1.656 1.656-4.274 2.094-6.36 1.027l-.706-.362c-2.086-1.069-3.474-3.258-3.474-5.602v-34.302l.001-26.228c0-2.344-1.427-4.458-3.473-5.602l-.707-.361a5.83 5.83 0 00-6.36 1.026l-1.984 1.985c-1.144 1.152-3.508 2.128-5.14 2.128-12.336 0-12.336-18.505 0-18.505 1.904.11 3.715.86 5.14 2.128l1.985 1.985a5.812 5.812 0 006.359 1.026l.707-.362c1.287-1.485 3.473-2.775 3.473-5.602v-30.33M23.086 168.343c-12.336 0-12.336-18.505 0-18.505 1.632 0 3.992.98 5.14 2.128l1.985 1.985c1.656 1.656 4.274 2.094 6.359 1.027l.707-.362c2.086-1.069 3.474-3.258 3.474-5.602l-.001-34.302V88.485c0-2.344 1.387-4.533 3.473-5.602l.707-.361c2.085-1.068 4.703-.63 6.359 1.026l1.985 1.985c1.148 1.148 3.508 2.128 5.14 2.128 12.336 0 12.336-18.505 0-18.505-1.905.11-3.791.78-5.14 2.128l-1.985 1.985c-1.657 1.657-4.273 2.094-6.36 1.026l-.706-.362c-1.75-.895-3.474-2.775-3.474-5.602v-30.33m80.75 80.749H91.17c-2.827 0-4.707 1.724-5.602 3.473l-.362.707c-1.068 2.086-.631 4.702 1.026 6.359l1.985 1.985c1.349 1.349 2.018 3.236 2.128 5.14 0 12.336-18.505 12.336-18.505 0 0-1.632.98-3.992 2.128-5.14l1.985-1.985c1.656-1.656 2.094-4.274 1.026-6.359l-.361-.707c-1.069-2.086-3.258-3.474-5.602-3.473h-60.53c-2.344 0-4.533-1.387-5.602-3.473l-.362-.707c-1.067-2.085-.63-4.703 1.027-6.359l1.985-1.985c1.148-1.148 2.128-3.508 2.128-5.14 0-12.336-18.505-12.336-18.505 0M121.5 38H91.169c-2.827 0-4.707-1.724-5.602-3.473l-.362-.707c-1.068-2.086-.631-4.702 1.026-6.359l1.985-1.985c1.349-1.349 2.018-3.235 2.128-5.14C90.344 8 71.84 8 71.84 20.337c0 1.632.977 3.994 2.128 5.14.663.66 1.343 1.305 1.985 1.985 1.608 1.703 2.003 4.23 1.026 6.36-.11.24-.233.474-.361.706C75.48 36.577 73.359 38 71.015 38H36.712L10.485 38c-2.344 0-4.533 1.387-5.602 3.473-.12.236-.24.471-.362.707-1.067 2.085-.63 4.703 1.027 6.36l1.985 1.984c1.148 1.148 2.128 3.508 2.128 5.14C9.66 68-8.844 68-8.844 55.664'  stroke-width='4' stroke='hsla(33, 90%, 65%, 0.25)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+
+
+    & h4 {
+        font-family: Neuemontreal, sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .thanks-desc{
+        display: none;
+    }
+    .dot {
+        display: none;
+    }
+
+    .loading-text {
+        font-size: 3lvh;
+
+    }
+
+    .nav-items a {
+        font-size: 1.1rem;
+        color: #000 !important;
+        font-weight: 400 !important;
+    }
+    .nav{
+        padding: 6% 2% 10% 2%;
+
+    }
+
+    .blk {
+        width: 100%;
+        /* padding:10% 10%; */
+    
+
+    }
+    .page1 .blk{
+        height: fit-content;
+    }
+
+    .ylw {
+        display: none;
+    }
+
+    .page1 h1 {
+        color: #fed43a;
+        font-size: 7vw;
+        -webkit-text-fill-color: #fed43a;
+        /* Override the color property and set the text fill color to black */
+        -webkit-text-stroke-width: 1px;
+        /* Set the width of the text stroke (outline) to 1 pixel */
+        -webkit-text-stroke-color: #fed43a;
+        /* Set the color of the text stroke (outline) to white */
+        text-shadow: none;
+        padding-top: 30px;
+        /* padding-bottom: 8px; */
+        letter-spacing: 0.9px;
+        font-weight: 600;
+        line-height: 0.3;
+
+    }
+
+    .h1-aman {
+        color: white;
+        /* Set the text color to white */
+        font-size: 7.5vw;
+        -webkit-text-fill-color: white;
+        /* Override the color property and set the text fill color to black */
+        -webkit-text-stroke-color: white;
+        /* Set the color of the text stroke (outline) to white */
+        text-shadow: none;
+        /* padding-top: 8px; */
+        /* padding-bottom: 8px; */
+        letter-spacing: 0px;
+        font-weight: 750;
+        line-height: 0.5;
+    }
+
+    .blk .ylwbtn {
+        display: none;
+    }
+
+ 
+
+    .heading {
+        width: 100%;
+    }
+    #work{
+        height: 20lvh !important;
+    }
+
+
+   
+
+    .page2 .blk {
+        height: 100%;
+        display: flex;
+    }
+
+    .about .heading {
+        height: 20vh !important;
+        display: flex;
+
+    }
+
+    .about .heading .blk {
+        height: 20vh !important;
+    }
+
+    .h1-heading {
+        position: relative;
+        /* width: 100vw; */
+
+        font-size: calc(5.5vw+3lvh);
+        top: 0%;
+        padding: 10%;
+        text-align: center;
+        letter-spacing: 0px;
+        font-weight: 750;
+        line-height: 0.5;
+    }
+
+    .verticle1-page2 {
+        top: 5%;
+    }
+
+    .verticle2-page2 {
+        top: 5%;
+
+        .page2-title {
+            padding: 0;
+        }
+
+        .subtitle {
+            font-size: 3lvh;
+        }
+
+        .description {
+            height: auto;
+            display: none;
+
+        }
+
+        .work-mb-img {
+            padding: 12% 5% 12% 0%;
+
+            & img {
+                width: 100%;
+                border-radius: 8px;
+            }
+
+        }
+
+        .roles {
+            padding: 1vh 0;
+            margin-top: 1lvh;
+        }
+
+        .page2-buttons {
+            flex-direction: column;
+            gap: 1lvh;
+
+            .view,
+            .casestudy {
+                width: 100%;
+            }
+        }
+    }
+
+    .the-green-travels {
+        letter-spacing: -3px !important;
+
+    }
+
+    .heading .blk img {
+        position: absolute;
+        width: 75vw;
+        top: 30vw;
+        border-radius: 8px;
+        margin: 0 20px;
+
+    }
+
+    #about {
+        height: 20vh !important;
+    }
+
+    .pageaboutdesc {
+        height: 100lvh !important;
+
+    }
+    /* .pageaboutdesc .blk{
+        height: auto !important;
+    } */
+    .aboutdesc {
+        align-items: flex-start;
+        height: auto;
+        width: 75vw;
+        margin-right: 5vw;
+        box-shadow: 0px 0px 0vw #ff9800;
+
+    }
+
+    .aboutdescbox {
+        flex-direction: column;
+
+        /* flex-wrap: wrap-reverse; */
+        .aboutleft {
+            width: 100% !important;
+            height: 60% !important;
+            align-items: center;
+            justify-content: center;
+            padding: 10%;
+            
+            .dp {
+                height: 20lvh !important;
+                width: 20lvh !important;
+
+                border-radius: 50%;
+            }
+
+        }
+
+        .aboutright {
+            overflow: hidden;
+
+            width: 100% !important;
+            height: 140% !important;
+
+            .aboutp {
+                padding: 4% 2%;
+
+                letter-spacing: .5px;
+                font-size: 11.5px !important;
+                        }
+        }
+
+    }
+
+    #expertise {
+        & .blk {
+            height: 100% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & .heading {
+            width: 100%;
+
+            & .h1-heading {
+                line-height: 5lvh;
+                padding: 0%;
+
+            }
+
+        }
+    }
+
+    .my-expertise {
+        height: 100lvh;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        .show {
+            display: flex;
+            width: 100%;
+            height: 50%;
+
+            & .expertise-title {
+                color: #000 !important;
+            }
+        }
+
+        & .blk {
+            width: 100%;
+            height: 50%;
+            padding: 5% 5%;
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .expertise {
+            height: 100%;
+            width: 100%;
+            margin-bottom: 5%;
+            display: flex;
+            flex-direction: column;
+
+            .icon {
+                height: 30%;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+
+                & img {
+                    height: 100%;
+                    padding: 2%;
+                    background-color: #fed43a;
+                    border-radius: 50px;
+
+                }
+            }
+
+            .expertise-title {
+                height: 20%;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+                color: #fed43a;
+
+            }
+
+            .expertisedesc {
+                height: 50%;
+                width: 100%;
+                padding: 0% 10%;
+                font-size: 1.8lvh;
+                text-align: center;
+                justify-content: center;
+                display: flex;
+                overflow: hidden;
+
+            }
+
+        }
+    }
+
+    #contact {
+        justify-content: center;
+        align-items: center;
+        /* height: 90lvh !important; */
+    }
+
+    .form {
+        align-items: center;
+        position: relative;
+        justify-content: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100% !important;
+    }
+
+    .contactblk {
+        width: 100vw !important;
+        display: none !important;
+    }
+
+    .contactylw {
+        display: none !important;
+    }
+
+    .contact-form {
+        box-shadow: 0vh 0vh 5vh #ff9800 !important;
+        border: 0px !important;
+        width: 80vw !important;
+        height: fit-content !important;
+        padding: 5vh 3vh 3vh 3vh !important ;
+
+    }
+
+    .icons-row {
+        margin-top: 2vw;
+        scale: 0.78;
+    }
+
+    h4 {
+        font-size: 12px;
+        width: 75%;
+
+    }
+    footer{
+        height: 15lvh;
+        margin-bottom: 0;
+        background-color: #fed43a;
+        background-position: top;
+    }
+}
+@media screen and (max-height:720px) and (max-width:400px){
+    .pageaboutdesc{
+        height: 130lvh !important;
+        /* padding-bottom: 10vh !important; */
+    }
+    .contact-form {
+      
+        padding: 9vh 3vh 6vh 3vh !important ;
+
+    }
+    #contact {
+        height: 130lvh !important;
+    }
+    footer{
+        height: 25lvh;
+    }
+}
